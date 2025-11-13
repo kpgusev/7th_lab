@@ -5,8 +5,8 @@
 #include "operations.h"
 
 int main(int argc, char *argv[]) {
-	lab::TextLine* textLine = lab::createLine("7th_lab");
-	std::cout << textLine->content << std::endl;
-	lab::deleteLine(textLine);
+	lab::TextLine* line = lab::createLine("7th_lab");
+	std::cout << line->content << std::endl;
+	lab::deleteLine(line);
 	return EXIT_SUCCESS;
 }
