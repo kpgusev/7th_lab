@@ -4,6 +4,9 @@
 
 namespace lab {
 
-	int countChars(const TextLine* line, bool (*condition)(char));
+void transformLine(TextLine* line, char (*transform)(char));
+
+char toUpper(char c);
+char rot13(char c);
 
 } // namespace lab
