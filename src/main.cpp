@@ -6,7 +6,7 @@
 
 int main(int argc, char *argv[]) {
 	auto line = lab::createLine("7th_lab");
-	int x = lab::countChars(line, isdigit);
+	int x = lab::countChars(line, isdigit());
 	std::cout << line->content << std::endl;
 	std::cout << x << std::endl;
 	lab::deleteLine(line);
