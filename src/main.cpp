@@ -7,7 +7,6 @@
 int main(int argc, char *argv[]) {
 	lab::TextLine* textLine = lab::createLine("7th_lab");
 	std::cout << textLine->content << std::endl;
-	delete[] textLine->content;
-	delete textLine;
+	lab::deleteLine(textLine);
 	return EXIT_SUCCESS;
 }

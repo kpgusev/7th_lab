@@ -16,4 +16,9 @@ TextLine* createLine(const char* str) {
 	return textLine;
 } 
 
+void deleteLine(TextLine* line) {
+	delete[] line->content;
+	delete line;
+}
+
 } // namespace lab
