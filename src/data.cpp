@@ -6,10 +6,10 @@ namespace lab {
 
 TextLine* createLine(const char* str) {
 	if (str == nullptr)	return nullptr;
-	size_t length = std::strlen(str);
-	char* buffer = new char[length + 1];
+	auto length = std::strlen(str);
+	auto buffer = new char[length + 1];
 	std::strcpy(buffer, str);
-	TextLine* line = new TextLine;
+	auto line = new TextLine;
 	line->length = static_cast<int>(length);
 	line->content = buffer;
 	return line;

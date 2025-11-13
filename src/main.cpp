@@ -9,7 +9,7 @@ char offset(char symbol) {
 }
 
 int main(int argc, char *argv[]) {
-	lab::TextLine* line = lab::createLine("7th_lab");
+	auto line = lab::createLine("7th_lab");
 	lab::transformLine(line, &offset);
 	std::cout << line->content << std::endl;
 	lab::deleteLine(line);
