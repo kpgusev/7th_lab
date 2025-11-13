@@ -4,4 +4,6 @@
 
 namespace lab {
 
+TextLine* createLine(const char* str); 
+
 } // namespace lab

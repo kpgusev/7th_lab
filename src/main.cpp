@@ -1,7 +1,13 @@
 #include <cstdlib>
 #include <iostream>
 
+#include "data.h"
+#include "operations.h"
+
 int main(int argc, char *argv[]) {
-	std::cout << "7th_lab" << std::endl;
+	lab::TextLine* textLine = lab::createLine("7th_lab");
+	std::cout << textLine->content << std::endl;
+	delete[] textLine->content;
+	delete textLine;
 	return EXIT_SUCCESS;
 }
