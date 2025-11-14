@@ -1,6 +1,7 @@
 #include "operations.h"
 #include "data.h"
 
+#include <cstring>
 #include <cctype>
 #include <cstddef>
 
@@ -44,7 +45,7 @@ namespace lab {
 
 	bool isVowel(char c) {
 		const char* vowels = "aeiouAEIOU";
-		for (int i = 0; i < strlen(vowels); i++) {
+		for (int i = 0; i < std::strlen(vowels); i++) {
 			if (c == vowels[i]) return true;
 		}
 		return false;
