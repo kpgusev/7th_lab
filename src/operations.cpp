@@ -35,4 +35,24 @@ namespace lab {
 		return x;
 	}
 
+	void replaceChars(TextLine* line, bool(*condition)(char), char replacement) {
+		if (line == nullptr || line->content == nullptr || condition == nullptr) return;
+		for (int i = 0; i < line->length; i++) {
+			if (condition(line->content[i])) line->content[i] = replacement;
+		}
+	}
+
+	bool isVowel(char c) {
+		const char* vowels = "aeiouAEIOU";
+		for (int i = 0; i < strlen(vowels); i++) {
+			if (c == vowels[i]) return true;
+		}
+		return false;
+	}
+
+	bool isDigit(char c) {
+		if (isdigit(c)) return true;
+		return false;
+	}
+
 } // namespace lab
