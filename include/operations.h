@@ -10,5 +10,8 @@ namespace lab {
 	char rot13(char c);
 
 	int countChars(const TextLine* line, bool (*condition)(char));
+	void replaceChars(TextLine* line, bool (*condition)(char), char replacement);
+	bool isVowel(char c);
+	bool isDigit(char c);
 
 } // namespace lab
